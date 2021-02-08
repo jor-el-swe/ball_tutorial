@@ -155,10 +155,10 @@
                 {
                     "name": "",
                     "id": "3ea4d645-4504-4529-b061-ab81934c3752",
-                    "path": "<Joystick>/stick",
+                    "path": "<Touchscreen>/primaryTouch/delta",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Joystick",
+                    "groups": "Touch",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
