@@ -9,7 +9,7 @@
                     "name": "Move",
                     "type": "Value",
                     "id": "012c7cdb-8b5b-4f70-963b-ed14ddc8feae",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
                 },
@@ -143,22 +143,11 @@
                 },
                 {
                     "name": "",
-                    "id": "fb32a265-7cfb-4597-89c5-c9eeaac79950",
-                    "path": "<Sensor>",
+                    "id": "34588a85-f17f-49e0-9a75-601dbbdeacc0",
+                    "path": "<Accelerometer>/acceleration",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Touch",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "be0b2668-fce8-4b72-8bc7-26bc2333772a",
-                    "path": "*/{Tilt}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Touch",
+                    "groups": "",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
