@@ -1,8 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,13 +23,21 @@ public class PlayerController : MonoBehaviour
 
         SetCountText();
         winTextObject.SetActive(false);
+        
+        InputSystem.EnableDevice(UnityEngine.InputSystem.Gyroscope.current);
+        InputSystem.EnableDevice(UnityEngine.InputSystem.Accelerometer.current);
+        InputSystem.EnableDevice(UnityEngine.InputSystem.GravitySensor.current);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
+        
+        Vector3 movement2 = new Vector3(Input.acceleration.x, 0, Input.acceleration.y);
+        Debug.Log("x: " + Input.acceleration.x + "y: " + Input.acceleration.y);
         rb.AddForce(movement * speed);
+        rb.AddForce(movement2 * speed);
     }
 
 
